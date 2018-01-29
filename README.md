@@ -17,7 +17,7 @@ docker build -t "${GUIDED_TOUR_BUILDER}" .
 
 ``` shell
 GUIDED_TOUR_BUILDER="dancn/guided-tour-builder"
-docker run -it --rm -v $(pwd):/docs $GUIDED_TOUR_IMAGE
+docker run -it --rm -v "$(pwd):/docs" "${GUIDED_TOUR_BUILDER}"
 ```
 
 Expected output:
